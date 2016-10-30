@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.shehabsalah.mobile_app_project.SettingsActivity">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+        <LinearLayout android:id="@+id/fullscreen_header_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:scaleType="fitCenter"
+            android:background="#262626" android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/close_logo"
+                    android:id="@+id/close_image"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/settings_logo"
+                    android:id="@+id/settings_logo"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Settings"
+                    android:id="@+id/textView2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/settings_logo" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/save_image"
+                    android:src="@mipmap/save_logo"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/fullscreen_header_controls2" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:scaleType="fitCenter"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:ems="10"
+                    android:id="@+id/edit_name"
+                    android:textColor="#4b4b4b" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#4b4b4b"
+                    android:text="email@example.com"
+                    android:id="@+id/edit_email"
+                    android:layout_below="@id/edit_name"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/spinner"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/edit_email"
+                    android:layout_alignParentStart="true"
+                    android:spinnerMode="dropdown"
+                    android:background="#202020" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/spinner2"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/spinner"
+                    android:layout_alignParentStart="true"
+                    android:spinnerMode="dropdown"
+                    android:background="#202020" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="To Change Your Faculty\nPlease call us on: 00201148757778\nAnd make request."
+
+                    android:id="@+id/textView"
+                    android:layout_below="@+id/spinner2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:textColor="#c9c9c9"
+                    android:gravity="center_horizontal" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/fullscreen_header_controls3" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="fitCenter"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LOGOUT"
+                android:background="#3c77f8"
+                android:id="@+id/logout_button" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>

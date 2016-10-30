@@ -1,0 +1,173 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.shehabsalah.mobile_app_project.ProfileActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <LinearLayout android:id="@+id/fullscreen_header_controls" style="?metaButtonBarStyle"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:scaleType="fitCenter"
+        android:background="#1b81c2" android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/logo"
+                android:src="@mipmap/logo"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:contentDescription="@string/Logo" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/notification_active"
+                android:src="@mipmap/notification_active"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/Notification" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/notification"
+                android:src="@mipmap/notification"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/Notification" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/profile_image_in_profile"
+                android:layout_marginTop="65dp"
+                android:contentDescription="@string/textViewNewPost" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView2"
+                android:background="@color/white"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/profile_image_in_profile"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backimage"
+                android:background="@color/white"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/profile_image_in_profile" />
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/profile_edit_button"
+                android:layout_above="@+id/listView2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="30dp"
+                android:layout_toEndOf="@+id/profile_image_in_profile"
+                android:background="#477799" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Internet"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/imageView2"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/profile_image_in_profile"
+                android:src="@mipmap/line" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/fullscreen_content_controls2" style="?metaButtonBarStyle"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:scaleType="fitCenter"
+        android:background="#242424" android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/homeButton"
+            android:src="@mipmap/home"
+            android:scaleType="fitCenter"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:baselineAlignBottom="true"
+            android:contentDescription="@string/homeActiveButton" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/cameraButton"
+            android:src="@mipmap/camera"
+            android:scaleType="fitCenter"
+            android:baselineAlignBottom="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/cameraButton" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/profileButton"
+            android:src="@mipmap/profile3"
+            android:scaleType="fitCenter"
+            android:baselineAlignBottom="true"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/profileButton" />
+
+    </LinearLayout>
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>

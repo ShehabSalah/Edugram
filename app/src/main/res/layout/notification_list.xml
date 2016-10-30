@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#b7bef5"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f9faff">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:id="@+id/Notification_userpic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/user_comment_pic"
+            android:src="@mipmap/profile_picture"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/Notification_username"
+            android:textColor="#2b92ff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Notification_userpic"
+            android:layout_toEndOf="@+id/Notification_userpic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/Notification_area"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Notification_username"
+            android:layout_toEndOf="@+id/Notification_username" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/seen_done"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@+id/Notification_area"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>

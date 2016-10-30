@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ffffff"
+    tools:context=".activity_comments_list">
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Comment_area2"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="50dp"/>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+        <LinearLayout android:id="@+id/fullscreen_header_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:scaleType="fitCenter"
+            android:background="#1b81c2" android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:id="@+id/logo"
+                    android:src="@mipmap/logo"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:contentDescription="@string/Logo" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="fitCenter"
+            android:background="#242424" android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF"
+                    android:padding="15dp"
+                    android:hint="Comment..."
+                    android:textColorHint="#FFFFFFFF"
+                    android:maxHeight="250dp"
+                    android:layout_marginRight="80dp"
+                    android:id="@+id/enter_comment_holder"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/set_comment"
+                    android:src="@mipmap/commentadd"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/Notification" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Internet"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</FrameLayout>

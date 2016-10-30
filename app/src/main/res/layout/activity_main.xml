@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/post_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignTop="@+id/user_name_main">
+        <LinearLayout android:id="@+id/fullscreen_header_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:scaleType="fitCenter"
+            android:background="#1b81c2" android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:id="@+id/logo"
+                    android:src="@mipmap/logo"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:contentDescription="@string/Logo" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:id="@+id/notification_active"
+                    android:src="@mipmap/notification_active"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/Notification" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:id="@+id/notification"
+                    android:src="@mipmap/notification"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/Notification" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profile_picture_main"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/profile_picture"
+            android:layout_below="@+id/fullscreen_header_controls"
+            android:contentDescription="@string/ProfilePic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:id="@+id/user_name_main"
+            android:layout_alignTop="@+id/profile_picture_main"
+            android:layout_toRightOf="@+id/profile_picture_main"
+            android:layout_toEndOf="@+id/profile_picture_main"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#d8010101" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/faculty_main"
+            android:layout_below="@+id/user_name_main"
+            android:layout_toRightOf="@+id/profile_picture_main"
+            android:layout_toEndOf="@+id/profile_picture_main"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/postTxt_main"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/profile_picture_main"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="#010101"
+            android:textDirection="ltr"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="250dp"
+            android:id="@+id/post_picture_main"
+            android:src="@mipmap/load_image"
+            android:layout_below="@+id/postTxt_main"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/PostImage"
+            android:fitsSystemWindows="true"
+            android:cropToPadding="false"
+            android:scaleType="fitXY" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_picture_main"
+            android:id="@+id/com_like">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:id="@+id/like_main"
+                android:src="@mipmap/like"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/Like_Image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/likeNumber_main"
+                android:layout_alignTop="@+id/like_main"
+                android:layout_toRightOf="@+id/like_main"
+                android:layout_toEndOf="@+id/like_main"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="9dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/comments_main"
+                android:layout_alignTop="@+id/likeNumber_main"
+                android:layout_toRightOf="@+id/likeNumber_main"
+                android:layout_toEndOf="@+id/likeNumber_main"
+                android:layout_marginLeft="15dp"
+                android:textColor="#885fb6ff" />
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/internet_main"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setOnLikeUnlikeClick"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</ScrollView>

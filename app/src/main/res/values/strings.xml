@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Edugram</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="profileButton">Profile</string>
+    <string name="cameraButton">Open_Camera</string>
+    <string name="homeActiveButton">Home_Active</string>
+    <string name="Logo">Notification</string>
+    <string name="Notification">Notification</string>
+    <string name="user_name">Shehab</string>
+    <string name="faculty">Computer Science</string>
+    <string name="post_content">How to make android application like instagram or sound cloud?!!!</string>
+    <string name="ProfilePic">ProfilePic</string>
+    <string name="PostImage">PostImage</string>
+    <string name="Like_Image">Like</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string-array name="camera">
+        <item>Browse</item>
+        <item>Open Camera</item>
+    </string-array>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_comment_pic">user_comment_pic</string>
+    <string name="username">Small Text</string>
+    <string name="title_activity_conmments_list">conmments_list</string>
+    <string name="upload_profile_pic">Upload my new profile picture</string>
+    <string name="title_activity_notifications">notifications</string>
+    <string name="internet_txt">internet access</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="hint_faculty">Faculty</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_country">Country</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="mail">Email</string>
+    <string name="pass">Password</string>
+    <string name="signin">Signin</string>
+    <string name="signup">Signup</string>
+    <string name="title_activity_new_post">newPostActivity</string>
+    <string name="Rotatenegative">Rotate -90</string>
+    <string name="RotatePositive">Rotate +90</string>
+    <string name="InsertNewPost">Post</string>
+    <string name="textViewNewPost">testViewNewImagePost</string>
+    <string name="WriteNewPostText">Write Post ...</string>
+    <string name="CheckInternetAccess">InterNetAccess</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="title_activity_user_login">UserLoginActivity</string>
+
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="profile_edit_button">Settings</string>
+
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>
